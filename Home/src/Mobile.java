@@ -18,17 +18,23 @@ public class Mobile {
 
         System.out.println("Инстал прироложения");
         Apple.installApp(new String[]{""});
+        System.out.println();
 
         System.out.println(" Удаление Приложений");
         Apple.uninstallApp(new String[]{""});
+        System.out.println();
 
         System.out.println(" Заряд батереии");
         Apple.showBatteryLevel(80);
+        System.out.println();
         Apple.chargeBattery(30);
+        System.out.println();
 
         System.out.println(" Сравниваем два телефона");
         Apple1.equals(Apple);
+        System.out.println();
         Apple.equals(Motorola);
+        System.out.println();
 
         System.out.println("Версия ОП");
         Apple.version("18");

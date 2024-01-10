@@ -48,8 +48,10 @@ public  class HomeWork16_Mobile {
         installedApplications[0] = "Instagram";
         installedApplications[1] = " игра Бегемот";
         installedApplications[2] = "Фейсбук";
-        String nameInstalledApplications = installedApplications[1]+" " + installedApplications[2]+" " + installedApplications[0];
-        System.out.println(nameInstalledApplications);
+        String InstalledApplications = installedApplications[1]+" " + installedApplications[2]+" " + installedApplications[0];
+        System.out.printf("Модель :%s  Операционная система устройства :%s Процент заряда батареи :%s " +
+                "Установленные приложения :%s", this.deviceModel,this.operatingSystemOfTheDevice,this.batteryCharge,
+                this.installedApplications+InstalledApplications);
 
     }
 // Удаление приложения
