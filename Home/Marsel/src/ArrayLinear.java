@@ -13,7 +13,7 @@ public class ArrayLinear {
         Map<Integer, Integer> counter = new HashMap<>();
         for (int number : array) {
             counter.put(number, counter.getOrDefault(number, 0) + 1);
-            System.out.println(number);
+           // System.out.println(number);
         }
         List<Map.Entry<Integer, Integer>> entryList = new ArrayList<>(counter.entrySet());
         entryList.sort((a, b) -> {
@@ -21,7 +21,7 @@ public class ArrayLinear {
             return result != 0 ? result : Integer.compare(a.getKey(), b.getKey());
         });
         for (int i = 0; i < Math.min(3,entryList.size()); i++) {
-            System.out.println("Вывод 3 элементов :" + entryList.get(i).getKey() + " ");
+            System.out.println("Вывод  элементов :" + entryList.get(i).getKey() + " ");
 
         }
     }
