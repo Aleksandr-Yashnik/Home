@@ -5,7 +5,7 @@ public class FigureCalculator {
             double circleArea = calculateArea(circleSides);
             System.out.println("Площадь круга: " + circleArea);
 
-            double[] rectangleSides = {25.0, 6.0};
+            double[] rectangleSides = {10, 15};
             double rectangleArea = calculateArea(rectangleSides);
             System.out.println("Площадь прямоугольника: " + rectangleArea);
 
