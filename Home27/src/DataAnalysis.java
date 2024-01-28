@@ -2,9 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-
 public class DataAnalysis {
-
     public static void main(String[] args) {
         // Создание и заполнение ArrayList строками
         List<String> stringList = new ArrayList<>();
@@ -13,19 +11,15 @@ public class DataAnalysis {
         stringList.add("Яблоко");
         stringList.add("Компьютер");
         stringList.add("Снег");
-
         // Удаление строк короче 6 символов и вывод результата
-        removeShortString(stringList, 6);
+        removeShortString(stringList, 5);
         System.out.println("Строки после удаления коротких: " + stringList);
-
         // Преобразование всех строк в верхний регистр и вывод результата
         toUpperCase(stringList);
         System.out.println("Строки в верхнем регистре: " + stringList);
-
         // Заполнение ArrayList случайными числами
         List<Integer> numberList = generateRandomNumbers(10);
         System.out.println("Случайные числа: " + numberList);
-
         // Нахождение максимального, минимального и среднего значений
         System.out.println("Max: " + findMax(numberList));
         System.out.println("Min: " + findMin(numberList));
